@@ -13,7 +13,6 @@ export const JournalPage = () => {
      { /* <NothingSelectedView /> */}
       <NoteView /> 
 
-
       <IconButton
         size='large'
         sx={{
