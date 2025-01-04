@@ -4,15 +4,19 @@ import './styles.css'
 
 import { JournalApp } from './JournalApp.jsx'
 import { BrowserRouter } from 'react-router'
+import { Provider } from 'react-redux'
+import { store } from './store'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Provider store={store}>
 
-    <BrowserRouter>
+      <BrowserRouter>
 
-        <JournalApp />  
-        
-    </BrowserRouter>
+          <JournalApp />  
+          
+      </BrowserRouter>
 
+    </Provider>
   </StrictMode>,
 )
